@@ -1,7 +1,14 @@
 addons:
   sauce_connect: true
+  
+language: python
+python:
+- '2.7.6'
+install:
+- pip install -U selenium
+- pip install python-dotenv
 
 
-script: python DropTask/Demo_Test.py -s Y
+script: python DropTask/Demo_Test.py
 
   
