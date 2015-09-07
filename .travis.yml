@@ -3,7 +3,7 @@ addons:
   
 language: python
 python:
-- '2.7.6'
+- '2.7'
 install:
 - pip install -U selenium
 - pip install python-dotenv
