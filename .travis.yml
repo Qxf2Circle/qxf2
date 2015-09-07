@@ -1,19 +1,17 @@
 # Version of python to use
   
-  language: python
-  python:
-    - "2.7"
+language: python
+python:
+  - "2.7"
+  
 addons:
   sauce_connect: true
 
-  caps = Selenium::WebDriver::Remote::Capabilities.firefox({
-  'tunnel-identifier' => ENV['TRAVIS_JOB_NUMBER']
-})
-driver = Selenium::WebDriver.for(:remote, {
-  url: 'http://username:access_key@ondemand.saucelabs.com/wd/hub',
-  desired_capabilities: caps
-})
-  script: 
-    - python DropTask/Demo_Test.py -s Y
+  caps = Selenium::WebDriver::Remote::Capabilities.firefox({'tunnel-identifier' => ENV['TRAVIS_JOB_NUMBER']})
+  driver = Selenium::WebDriver.for(:remote, { url: 'http://username:access_key@ondemand.saucelabs.com/wd/hub',
+  desired_capabilities: caps  })
+  
+script: 
+  - python DropTask/Demo_Test.py
 
   
