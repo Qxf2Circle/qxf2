@@ -1,0 +1,12 @@
+
+a. Install Python 2.x
+b. Install Selenium
+c. Add both to your PATH environment variable
+d. If you do not have it already, get pip 
+e. 'pip install python-dotenv'
+f. Update 'login.credentials' with your credentials
+g. Update 'saucelabs.credentials' is you want to run on Sauce Labs
+h. In case you have TestRail Integration, update the testrail.conf with proper case ids. Also update the testrail.env with url,user,password.
+i. To run mechanize scripts install mechanize (pip install mechanize)
+j. Install Gatling to run Gatling scripts. For more details on installation refer to  http://qxf2.com/blog/performance-testing-using-gatling/
+
