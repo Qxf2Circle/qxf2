@@ -6,7 +6,5 @@ python:
 
 addons:
   sauce_connect: true
-## Customize dependencies
-  - python DropTask/Demo_Test.py
 
   
