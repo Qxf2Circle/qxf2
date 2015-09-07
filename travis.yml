@@ -1,0 +1,15 @@
+# Version of python to use
+
+language: python
+python:
+  - "2.7"
+
+
+## Customize dependencies
+install:
+    - sudo pip install -U selenium
+    - sudo pip install python-dotenv	
+
+    - python DropTask/Demo_Test.py
+
+  
