@@ -5,8 +5,8 @@ language: python
 python:
 - '2.7'
 install:
-- sudo pip install -U selenium
-- sudo pip install python-dotenv
+- pip install -U selenium
+- pip install python-dotenv
 script: python DropTask/Demo_Test.py
 
   
