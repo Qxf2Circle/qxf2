@@ -9,6 +9,6 @@ install:
 - pip install python-dotenv
 
 
-script: python DropTask/Demo_Test.py
+script: python DropTask/test.py
 
   
