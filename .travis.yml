@@ -7,6 +7,6 @@ python:
 install:
 - pip install -U selenium
 - pip install python-dotenv
-script: python DropTask/Demo_Test.py
+script: python DropTask/Demo_Test.py -s Y
 
   
