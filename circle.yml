@@ -4,14 +4,16 @@ machine:
   timezone:
     America/Los_Angeles # Set the timezone
 
+  # Version of python to use
+
 
 ## Customize dependencies
 dependencies:
   pre:
     - sudo pip install -U selenium
     - sudo pip install python-dotenv	
+
+## Customize test commands
 test:
   override:
-	- chmod +x DropTask/DropTask.sh
-	- DropTask/DropTask.sh
-
+    - python DropTask/Demo_Test.py
