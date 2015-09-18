@@ -23,7 +23,7 @@ class Login_Page(Page):
         self.login_password = "//input[@type='password']"
         self.login_submit = "//button[text()='Login']"
 
-
+    @Page._screenshot
     def login(self, username, password):
         "Login using credentials provided"  
         self.set_text(self.login_username,username)
