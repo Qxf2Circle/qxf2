@@ -1,6 +1,4 @@
 ## Customize the test machine
-general:
-  build_dir: DropTask
 machine:
 
   timezone:
