@@ -15,5 +15,5 @@ dependencies:
 
 ## Customize test commands
 test:
-  override:
-    - python DropTask/Demo_Test.py
+  override: - chmod +x DropTask/DropTask.sh
+    - DropTask/DropTask.sh
