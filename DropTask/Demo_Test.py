@@ -59,6 +59,7 @@ def run_demo_test(browser,conf,tconf,base_url,test_run_id=None,sauce_flag=None,b
  
     #Create a login page object
     login_obj = PageFactory.get_page_object("login",driver)
+    login_obj.write(username)
     result_flag = login_obj.login(username,password)
     if (result_flag):
         msg = "Login was successful for user: %s url: %s"%(username,base_url)
