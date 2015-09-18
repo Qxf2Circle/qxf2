@@ -56,6 +56,8 @@ def run_demo_test(browser,conf,tconf,base_url,test_run_id=None,sauce_flag=None,b
     credentials_file = os.path.join(os.path.dirname(__file__),'login.credentials')
     username = Conf_Reader.get_value(credentials_file,'LOGIN_USER')
     password = Conf_Reader.get_value(credentials_file,'LOGIN_PASSWORD')
+    print "Test"
+    print username
  
     #Create a login page object
     login_obj = PageFactory.get_page_object("login",driver)
