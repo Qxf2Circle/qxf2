@@ -15,6 +15,6 @@ dependencies:
 
 ## Customize test commands
 test:
-  override: 
-    - chmod +x DropTask/DropTask.sh
-    - DropTask/DropTask.sh
+  override:
+    - nosetests test
+
