@@ -10,7 +10,7 @@ class Selenium_Failure_Test(unittest.TestCase):
     def test_selenium_trial_page(self):
         driver = self.driver
         driver.get("http://qxf2.com/selenium-trial-main")
-        self.assertIn("Failure", driver.title)
+        self.assertIn("Qxf2", driver.title)
         
 
     def tearDown(self):
