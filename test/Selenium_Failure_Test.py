@@ -11,7 +11,7 @@ class Selenium_Failure_Test(unittest.TestCase):
         driver = self.driver
         driver.get("http://qxf2.com/selenium-trial-main")
         os.makedirs('./screenshots')
-        driver.save_screenshot('./screenshot/Qxf2_Tutorial_Failure.png')
+        driver.save_screenshot('./screenshots/Qxf2_Tutorial_Failure.png')
         self.assertIn("Qxf2", driver.title)
         
 
