@@ -2,3 +2,8 @@ general:
   artifacts:
     - "./screenshots" #Save the screenshots for all the tests
     
+## Customize dependencies
+dependencies:
+  pre:
+    - sudo pip install -U selenium
+    - sudo pip install python-dotenv	
