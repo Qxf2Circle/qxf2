@@ -10,7 +10,7 @@ class Selenium_Success_Test(unittest.TestCase):
     def test_selenium_trial_page(self):
         driver = self.driver
         driver.get("http://qxf2.com/selenium-trial-main")
-        driver.save_screenshot('./test/Qxf2_Tutorial_success.png')
+        driver.save_screenshot('./screenshots/Qxf2_Tutorial_success.png')
         self.assertIn("Qxf2 Services: Selenium training main", driver.title)
         
 
