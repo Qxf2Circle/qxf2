@@ -11,7 +11,7 @@ class Selenium_Failure_Test(unittest.TestCase):
         driver = self.driver
         driver.get("http://qxf2.com/selenium-trial-main")
         driver.save_screenshot('./test/Qxf2_Tutorial_Failure.png')
-        self.assertIn("Qxf2", driver.title)
+        self.assertIn("Qxf", driver.title)
         
 
     def tearDown(self):
