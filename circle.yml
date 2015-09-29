@@ -1,23 +1,4 @@
-## Customize the test machine
-machine:
-
-  timezone:
-    America/Los_Angeles # Set the timezone
-
-  # Version of python to use
-
 general:
   artifacts:
     - "./screenshots" #Save the screenshots for all the tests
     
-## Customize dependencies
-dependencies:
-  pre:
-    - sudo pip install -U selenium
-    - sudo pip install python-dotenv	
-
-## Customize test commands
-test:
-  override:
-    - python test/Selenium_Failure_Test.py
-
