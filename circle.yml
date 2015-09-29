@@ -6,11 +6,10 @@ machine:
 
   # Version of python to use
 
-  general:
-    artifacts:
-     - "./screenshots" #Save the screenshots for all the tests
-     - "./logs" #Save the logs for all the tests
-
+general:
+  artifacts:
+    - "/screenshots" #Save the screenshots for all the tests
+    
 ## Customize dependencies
 dependencies:
   pre:
