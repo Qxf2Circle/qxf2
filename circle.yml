@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "./test/screenshot" #Save the screenshots for all the tests
+    - "./screenshots" #Save the screenshots for all the tests
     
 ## Customize dependencies
 dependencies:
