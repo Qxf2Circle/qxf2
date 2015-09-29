@@ -20,5 +20,5 @@ dependencies:
 ## Customize test commands
 test:
   override:
-    - nosetests test
+    - python test/Selenium_Failure_Test.py
 
