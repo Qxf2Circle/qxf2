@@ -11,5 +11,4 @@ dependencies:
 ## Running Tests
 test:
    override:
-    - python test/Selenium_Failure_Test.py
     - python test/Selenium_Success_Test.py
