@@ -6,7 +6,6 @@ general:
 dependencies:
   pre:
     - sudo pip install -U selenium
-    - sudo pip install python-dotenv	
     
 ## Running Tests
 test:
