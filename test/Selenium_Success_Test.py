@@ -1,21 +1,23 @@
-import unittest
+"""
+Selenium Test to login to Qxf2 Tutorial Page and assert the title
+"""
+
+import os
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 
-class Selenium_Success_Test(unittest.TestCase):
+# Create an instance of Firefox WebDriver
+driver = webdriver.Firefox()
+# The driver.get method will navigate to a page given by the URL
+driver.get("http://qxf2.com/selenium-tutorial-main")
+# Create a screenshots directory if not present
+if (os.path.exists('./screenshots')):
+    pass
+else:
+    os.makedirs('./screenshots')
+# Save screenshot in the created directory
+driver.save_screenshot('./screenshots/Qxf2_Tutorial_success.png')
+# Assert the Page Title
+assert "Qxf2 Services: Selenium training main" in driver.title
+# Close the browser window
+driver.close()
 
-    def setUp(self):
-        self.driver = webdriver.Firefox()
-
-    def test_selenium_trial_page(self):
-        driver = self.driver
-        driver.get("http://qxf2.com/selenium-trial-main")
-        driver.save_screenshot('./screenshots/Qxf2_Tutorial_success.png')
-        self.assertIn("Qxf2 Services: Selenium training main", driver.title)
-        
-
-    def tearDown(self):
-        self.driver.close()
-
-if __name__ == "__main__":
-    unittest.main()
