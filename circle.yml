@@ -11,4 +11,4 @@ dependencies:
 ## Running Tests
 test:
    override:
-    - python test/Selenium_Success_Test.py
+    - python Navigate_Qxf2_Tutorial_Test.py
