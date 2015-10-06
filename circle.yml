@@ -10,4 +10,4 @@ dependencies:
 ## Running Tests
 test:
    override:
-    - python Navigate_Qxf2_Tutorial_Test.py
+    - python tests/Navigate_Qxf2_Tutorial_Test.py
