@@ -10,7 +10,7 @@ driver = webdriver.Firefox()
 # The driver.get method will navigate to a page given by the URL
 driver.get("http://qxf2.com/selenium-tutorial-main")
 # Create a screenshots directory if not present
-if (os.path.exists('./screenshots')):
+if (os.path.exists('./tests/screenshots')):
     pass
 else:
     os.makedirs('./tests/screenshots')
