@@ -13,9 +13,9 @@ driver.get("http://qxf2.com/selenium-tutorial-main")
 if (os.path.exists('./screenshots')):
     pass
 else:
-    os.makedirs('./screenshots')
+    os.makedirs('./tests/screenshots')
 # Save screenshot in the created directory
-driver.save_screenshot('./screenshots/Qxf2_Tutorial_success.png')
+driver.save_screenshot('./tests/screenshots/Qxf2_Tutorial_page.png')
 # Assert the Page Title
 assert "Qxf2 Services: Selenium training main" in driver.title
 # Close the browser window
