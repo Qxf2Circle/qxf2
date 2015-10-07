@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Qxf2 Services: Selenium training main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Abel|Open+Sans:400,600" rel="stylesheet" />
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./assets/css/qxf2_stylesheet.css" rel="stylesheet">
+    <style type="text/css">
+      /* example styles for validation form demo */
+      #myform .form-group label.error {
+      color: #FB3A3A;
+      display: inline-block;
+      padding: 0;
+      text-align: left;
+      }
+    </style>
+</head>
+
+<body>
+  <div class="row col-md-12"><!--Logo and tagline-->
+    <div class="col-md-2 top-space-5">
+      <a href="./"><img src="./assets/img/qxf2_logo.png" class="img-responsive logo col-md-12" alt="Qxf2 Services"></a>	
+    </div>
+    <div class="col-md-8 top-space-15 text-center">
+      <a href="./" class="nounderline"><h1 class="banner-brown text-center">SOFTWARE TESTING SERVICES</h1><h1 class="text-center banner-grey">for startups</h1></a>
+    </div>      
+    <div class="col-md-2 top-space-25 dropdown hidden-xs">
+      <img src="./assets/img/menu.png" data-toggle="dropdown" class="img-responsive menu-img col-md-12 pull-right dropdown-toggle" alt="Menu">
+      <ul class="dropdown-menu pull-right text-right">
+	<li><a href="./" onClick="_gaq.push(['_trackEvent', 'Nav-Home', 'Click', 'Home']);">Home</a></li>
+	<li class="dropdown-submenu">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle" onClick="_gaq.push(['_trackEvent', 'Nav-Approach-Expand', 'Click', 'Open approach caret']);">Approach</a>
+	    <ul class="dropdown-menu text-left">
+	      <li><a href="./where-start-testing" onClick="_gaq.push(['_trackEvent', 'Nav-Start-Testing', 'Click', 'Start testing']);">Where we start</a></li>
+	      <li><a href="./approach" onClick="_gaq.push(['_trackEvent', 'Nav-Approach', 'Click', 'Approach']);">Detailed approach</a></li>
+	      <li><a href="./automation-tools" onClick="_gaq.push(['_trackEvent', 'Nav-Automation-Tools', 'Click', 'Automation tools']);">Automation</a></li>
+	    </ul>
+	</li>
+	<li class="dropdown-submenu">
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" onClick="_gaq.push(['_trackEvent', 'Nav-Resources-Expand', 'Click', 'Open resources caret']);">Resources</a>
+	  <ul class="dropdown-menu text-left">
+	    <li class="disabled tab-space"><strong>&nbsp;Do it yourself!</strong></li>
+            <li><a href="./testing-tiers" onClick="_gaq.push(['_trackEvent', 'Nav-Testing-Tiers', 'Click', 'Testing tiers']);">Testing tiers</a></li>
+            <li><a href="./automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Automation-DIY', 'Click', 'Automation DIY']);">Start automating</a></li>
+            <li><a href="./test-case-manager-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Case-Manager', 'Click', 'Test case manager']);">Test case manager</a></li>
+            <li><a href="./ci-server-diy" onClick="_gaq.push(['_trackEvent', 'Nav-CI', 'Click', 'CI DIY']);">CI server setup</a></li>
+            <li><a href="./cloud-tools-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Cloud', 'Click', 'Cloud tools DIY']);">Use cloud tools</a></li>
+	    <li><a href="./gui-automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-GUI-DIY', 'Click', 'GUI DIY']);">GUI automation</a></li>
+	    <li><a href="./api-automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-API-DIY', 'Click', 'API DIY']);">API automation</a></li>
+	    <li><a href="./unit-testing-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Unit-DIY', 'Click', 'Unit DIY']);">Unit testing</a></li>
+	    <li><a href="./performance-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Perf-DIY', 'Click', 'Perf-DIY']);">Performance tests</a></li>
+	    <li><a href="./crowdsourcing-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Crowdsourcing-DIY', 'Click', 'Crowdsourcing-DIY']);">Crowdsourcing guide</a></li>
+	  </ul>
+	</li>
+	<li class="dropdown-submenu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-About-Expand', 'Click', 'Open about caret']);">About</a>
+          <ul class="dropdown-menu text-left">
+	    <li><a href="./story" onClick="_gaq.push(['_trackEvent', 'Nav-Story', 'Click', 'Our story']);">Our story</a></li>
+	    <li><a href="./goals" onClick="_gaq.push(['_trackEvent', 'Nav-Goals', 'Click', 'Our Goals']);">Our goals</a></li>
+	    <li><a href="./qxf2-name" onClick="_gaq.push(['_trackEvent', 'Nav-Name', 'Click', 'Our name']);">Our name</a></li>
+	    <li><a href="./team" onClick="_gaq.push(['_trackEvent', 'Nav-Team', 'Click', 'Team']);">Team Qxf2</a></li>
+            <li><a href="./careers" onClick="_gaq.push(['_trackEvent', 'Nav-Careers', 'Click', 'Careers']);">Careers</a></li>
+          </ul>
+        </li>
+	<li class="dropdown-submenu">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-Contact-Expand', 'Click', 'Open Contact caret']);">Contact</a>
+          <ul class="dropdown-menu text-left">
+            <li><a href="./contact" onClick="_gaq.push(['_trackEvent', 'Nav-Contact', 'Click', 'Nav contact']);">Get in touch!</a></li>
+            <li><a href="https://github.com/qxf2" onClick="_gaq.push(['_trackEvent', 'Nav-GitHub', 'Click', 'Nav GitHub']);">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/qxf2-services" onClick="_gaq.push(['_trackEvent', 'Nav-LinkedIn', 'Click', 'To LinkedIn']);">LinkedIn</a></li>
+            <li><a href="https://twitter.com/qxf21" onClick="_gaq.push(['_trackEvent', 'Nav-Twitter', 'Click', 'To Twitter']);">Twitter</a></li>
+          </ul>
+        </li>
+	<li><a href="http://qxf2.com/blog" onClick="_gaq.push(['_trackEvent', 'Nav-Blog', 'Click', 'To Blog']);">Blog</a></li>
+	<li><a href="http://news.qxf2.com" onClick="_gaq.push(['_trackEvent', 'Nav-News', 'Click', 'To news']);">News for testers</a></li>
+      </ul>
+    </div>
+  </div><!--Logo and tagline-->
+  
+  
+  <div class="container"><!--Initial container-->
+    <div class="col-md-10 col-md-offset-1 top-space">
+      <div class="col-md-12">
+	<div class="row-fluid top-space-40">
+	  <p class="text-justify"> This page was created by <a href="http://qxf2.com">Qxf2 Services</a> and <a href="http://mangaloreinfotech.in/">Mangalore Infotech</a> to help testers practice Selenium. Selenium lets you control the browser through a script. Selenium lets you interact with browsers in a manner similar to real users interacting with browsers. For example, you can fill in text, click buttons, hover over elements, chose drop downs, validate text, etc.</p>
+	  <br>
+	  <br>
+	  <h2 class="grey_text text-center">Selenium for beginners: Practice page 1</h2>
+          <p class="text-justify text-center more">This page contains the most common HTML elements that you will interact with on a webpage. You can use this page to practice the follow with Selenium:
+	    <ul>
+	      <li>Navigate to a specific URL <p style="display:inline" class="grey_text">(come to this page)</p></li>
+	      <li>Fill text fields <p style="display:inline" class="grey_text">(fill the <strong>Example Form</strong> below)</p></li>
+	      <li>Set a dropdown <p style="display:inline" class="grey_text">(set Gender in the <strong>Example Form</strong> below)</p></li>
+	      <li>Enable/disable a checkbox <p style="display:inline" class="grey_text">(click on I agree)</p></li>
+	      <li>Click a button <p style="display:inline" class="grey_text">(submit the <strong>Example Form</strong> below)</p></li>
+	      <li>Identify elements without ids <p style="display:inline" class="grey_text">(the email field of <strong>Example Form</strong> below)</p></li>
+	      <li>Check for form validation messages <p style="display:inline" class="grey_text">(submit empty form)</p></li>
+	      <li>Check for successful form submit <p style="display:inline" class="grey_text">(goes to a new page)</p></li>
+	      <li>Hover and click <p style="display:inline" class="grey_text">(Menu > Resources > GUI automation)</p></li>
+	      <li>Count the number of rows in a table <p style="display:inline" class="grey_text">(use the <strong>Example Table</strong> table below)</p></li>
+	      <li>Get the text from a table row <p style="display:inline" class="grey_text">(use the <strong>Example Table</strong> table below)</p></li>
+	      <li>Get text in a cell of a table <p style="display:inline" class="grey_text">(use the <strong>Example Table</strong> table below)</p></li>
+	    </ul>
+	      <br><strong>NOTE:</strong> We presented a tutorial aimed at Selenium newbies as part of the <a href="http://www.meetup.com/Mangaluru-Software-Testing-Group/">Mangaluru Software Testing Group</a>. You can find the corresponding code on our <a href="https://github.com/qxf2/selenium-beginners">GitHub repository</a>.</p>
+	</div>
+      </div>
+    </div>
+    <div class="col-md-12 top-buffer"><!--Separator-->
+      <img src="./assets/img/cut_line.png" class="img-responsive col-lg-12">
+    </div>
+    <div class="col-md-10 col-md-offset-1 top-space">
+      <div class="col-md-12">
+	<h2 class="grey_text text-center" id="exampleForm">Example Form</h2>
+	<div class="row top-space-20 col-md-6 col-md-offset-3 panel panel-blue">
+	  <form id="myform" name="myform" action="./selenium-tutorial-redirect" method="POST" novalidate="novalidate">
+	    <div class="form-group">
+	      <label for="name">Name:</label>
+	      <input type="name" class="form-control" name="name" id="name" >
+	    </div>
+	    <div class="form-group">
+	      <label for="email">Email:</label>
+	      <input type="email" class="form-control" name="email">
+	    </div>
+	    <div class="form-group">
+	      <label for="pwd">Phone No:</label>
+	      <input type="phone" class="form-control" name="phone" id="phone">
+	    </div>
+	    <div class="dropdown">
+	      <button class="btn btn-primary dropdown-toggle status" type="button" data-toggle="dropdown">Gender
+		<span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu dropdown-inverse">
+		<li><a href="#exampleForm">Male</a>
+		</li>
+		<li><a href="#exampleForm">Female</a>
+		</li>
+	      </ul>
+	    </div>
+	    <div class="checkbox">
+	      <label><input type="checkbox"><p style="display:inline" class="grey_text">(optional) I agree to the terms and conditions</p></label>
+	    </div> 
+	    <p class="text-center">
+	      <button type="submit" class="btn btn-danger btn-lg">Click me!</button>
+	    </p>
+	    </div>
+	  </form>
+	</div>
+      </div>
+    </div>
+    <div class="col-md-12 top-buffer"><!--Separator-->
+      <img src="./assets/img/cut_line.png" class="img-responsive col-lg-12">
+    </div>
+    <div class="col-md-10 col-md-offset-1 top-space">
+      <div class="col-md-12">
+	<h2 class="grey_text text-center">Example Table</h2>
+	<div class="row-fluid top-space-20">
+	  <table name="Example Table"class="table table-striped">
+	    <thead>
+	      <tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+		<th>Gender</th>
+	      </tr>
+	    </thead>
+	    <tbody>
+	      <tr>
+		<td>Michael</td>
+		<td>michael@example.com</td>
+		<td>9898989898</td>
+		<td>Male</td>
+	      </tr>
+	      <tr>
+		<td>Williams</td>
+		<td>williams@example.com</td>
+		<td>7878787878</td>
+		<td>Female</td>
+	      </tr>
+	      <tr>
+		<td>Roger Federer</td>
+		<td>roger@example.com</td>
+		<td>6767676767</td>
+		<td>Male</td>
+	      </tr>
+	    </tbody>
+	  </table>
+	</div>
+      </div>
+    </div>
+    <div class="col-md-12"><!--Separator-->
+      <img src="./assets/img/cut_line.png" class="img-responsive col-lg-12">
+    </div>
+    <div class="col-md-12">
+      <ul class="nav nav-justified">
+	<li><a href="./" onClick="_gaq.push(['_trackEvent', 'Nav-Home', 'Click', 'Home']);">Home</a></li>
+	<li class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-Approach-Expand', 'Click', 'Open approach caret']);">Approach<span class="caret"></span></a>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="./where-start-testing" onClick="_gaq.push(['_trackEvent', 'Nav-Start-Testing', 'Click', 'Start testing']);">Where we start</a></li>
+	    <li><a href="./approach" onClick="_gaq.push(['_trackEvent', 'Nav-Approach', 'Click', 'Approach']);">Detailed approach</a></li>
+	    <li><a href="./automation-tools" onClick="_gaq.push(['_trackEvent', 'Nav-Automation-Tools', 'Click', 'Automation tools']);">Automation</a></li>
+	  </ul>
+	</li>
+	<li class="dropup">
+	  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-Automation-Expand', 'Click', 'Open automation caret']);">Resources<span class="caret"></span></a>
+	  <ul class="dropdown-menu" role="menu">
+            <li class="disabled tab-space"><strong>&nbsp;Do it yourself!</strong></li>
+            <li><a href="./testing-tiers" onClick="_gaq.push(['_trackEvent', 'Nav-Testing-Tiers', 'Click', 'Testing tiers']);">Testing tiers</a></li>
+            <li><a href="./automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Automation-DIY', 'Click', 'Automation DIY']);">Start automating</a></li>
+            <li><a href="./test-case-manager-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Case-Manager', 'Click', 'Test case manager']);">Test case manager</a></li>
+            <li><a href="./ci-server-diy" onClick="_gaq.push(['_trackEvent', 'Nav-CI', 'Click', 'CI DIY']);">CI server setup</a></li>
+            <li><a href="./cloud-tools-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Cloud', 'Click', 'Cloud tools DIY']);">Use cloud tools</a></li>
+	    <li><a href="./gui-automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-GUI-DIY', 'Click', 'GUI DIY']);">GUI automation</a></li>
+	    <li><a href="./api-automation-diy" onClick="_gaq.push(['_trackEvent', 'Nav-API-DIY', 'Click', 'API DIY']);">API automation</a></li>
+	    <li><a href="./unit-testing-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Unit-DIY', 'Click', 'Unit DIY']);">Unit testing</a></li>
+	    <li><a href="./performance-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Perf-DIY', 'Click', 'Perf-DIY']);">Performance tests</a></li>
+	    <li><a href="./crowdsourcing-diy" onClick="_gaq.push(['_trackEvent', 'Nav-Crowdsourcing-DIY', 'Click', 'Crowdsourcing-DIY']);">Crowdsourcing guide</a></li>
+	  </ul>
+	</li>
+	<li class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-About-Expand', 'Click', 'Open about caret']);">About<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+	    <li><a href="./story" onClick="_gaq.push(['_trackEvent', 'Nav-Story', 'Click', 'Our story']);">Our story</a></li>
+	    <li><a href="./goals" onClick="_gaq.push(['_trackEvent', 'Nav-Goals', 'Click', 'Our Goals']);">Our goals</a></li>
+	    <li><a href="./qxf2-name" onClick="_gaq.push(['_trackEvent', 'Nav-Name', 'Click', 'Our name']);">Our name</a></li>
+	    <li><a href="./team" onClick="_gaq.push(['_trackEvent', 'Nav-Team', 'Click', 'Team']);">Team Qxf2</a></li>
+            <li><a href="./careers" onClick="_gaq.push(['_trackEvent', 'Nav-Careers', 'Click', 'Careers']);">Careers</a></li>
+          </ul>
+	</li>
+	<li class="dropup">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" onClick="_gaq.push(['_trackEvent', 'Nav-Contact-Expand', 'Click', 'Open Contact caret']);">Contact<span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="./contact" onClick="_gaq.push(['_trackEvent', 'Nav-Contact', 'Click', 'Nav contact']);">Get in touch!</a></li>
+            <li><a href="https://github.com/qxf2" onClick="_gaq.push(['_trackEvent', 'Nav-GitHub', 'Click', 'Nav GitHub']);">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/company/qxf2-services" onClick="_gaq.push(['_trackEvent', 'Nav-LinkedIn', 'Click', 'To LinkedIn']);">LinkedIn</a></li>
+            <li><a href="https://twitter.com/qxf21" onClick="_gaq.push(['_trackEvent', 'Nav-Twitter', 'Click', 'To Twitter']);">Twitter</a></li>
+          </ul>
+	</li>
+	<li><a href="http://qxf2.com/blog" onClick="_gaq.push(['_trackEvent', 'Nav-Blog', 'Click', 'To Blog']);">Blog</a></li>
+	<li><a href="http://news.qxf2.com" onClick="_gaq.push(['_trackEvent', 'Nav-News', 'Click', 'To news']);">News for testers</a></li>
+      </ul>
+    </div>
+    <div class="col-md-12">      
+    <div class="row-fluid"><!--Copyright-->
+      <p class="text-center qxf2_copyright">
+	&copy; Qxf2 Services 2013 - 2015
+      </p>
+    </div><!--Copyright-->
+  </div>
+    <!-- javascript
+	 ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+
+    <!-- Start dropdown reset code -->
+    <script type="text/javascript">
+      $(function(){
+      $('.dropdown-inverse li > a').click(function(e){
+      $('.status').text(this.innerHTML);
+      });
+      });
+    </script>  
+    
+    <!-- Start jQuery form validation code -->
+    <script type="text/javascript">
+      $(function($,W,D)
+      {
+      var JQUERY4U = {};
+      
+      JQUERY4U.UTIL =
+      {
+        setupFormValidation: function()
+      {
+      //form validation rules
+      $("#myform").validate({
+      rules: {
+      name: "required",
+      phone: "required",
+      email: {
+      required: true,
+      email: true
+      },
+      },
+      messages: {
+      name: "Please enter your name",
+      phone: "Please enter your phone number",
+      email: "Please enter a valid email address",
+      },
+      submitHandler: function(form) {
+      form.submit();
+      }
+      });
+      }
+      }
+      //when the dom has loaded setup form validation rules
+      $(D).ready(function($) {
+      JQUERY4U.UTIL.setupFormValidation();
+      });
+      })(jQuery,window,document);
+    </script> 
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-38578610-1']);
+      _gaq.push(['_trackPageview']);
+      
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>    
+</body>
+</html>
