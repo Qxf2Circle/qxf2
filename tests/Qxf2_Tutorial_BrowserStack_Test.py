@@ -6,7 +6,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 class Qxf2_Tutorial_BrowserStack_Test(unittest.TestCase):
     "Example class written to run Selenium tests on BrowserStack"
     def setUp(self):
-        desired_cap = {'os': 'Windows', 'os_version' : '7', 'browser': 'Firefox', 'browser_version':'36', 'browserstack.debug': 'true' }
+        desired_cap = {'os': 'Windows', 'os_version' : '7', 'browser': 'Firefox', 'browser_version':'36', 'browserstack.debug': 'true', 'browserstack.local':'true' }
         self.driver = webdriver.Remote(command_executor='http://avinashshetty:ppAo6mDXzyZ18M5e7hbi@hub.browserstack.com:80/wd/hub',desired_capabilities=desired_cap)
         #self.driver = webdriver.Firefox()
         
