@@ -11,7 +11,7 @@ dependencies:
 ## Running Tests
 test:
   pre:
-    - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main /usr/share/nginx/html/selenium-tutorial-main
+    - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main.html /usr/share/nginx/html/selenium-tutorial-main.html
     
   override:
     - python tests/Navigate_Qxf2_Tutorial_Test.py
