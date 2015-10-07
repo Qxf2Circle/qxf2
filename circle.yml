@@ -13,6 +13,9 @@ test:
   pre:
     - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
     - sudo service nginx restart
+    - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
+    - unzip BrowserStackLocal-linux-x64.zip
+    - ./BrowserStackLocal -f ppAo6mDXzyZ18M5e7hbi /etc/nginx/
     
   override:
     - python tests/Navigate_Qxf2_Tutorial_Test.py
