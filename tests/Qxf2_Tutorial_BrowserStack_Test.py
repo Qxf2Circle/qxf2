@@ -13,7 +13,7 @@ class Qxf2_Tutorial_BrowserStack_Test(unittest.TestCase):
     def test_qxf2_selenium_tutorial(self):
         "An example test: Visit selenium tutorial link "
         #Go to the URL 
-        self.driver.get("http://localhost/selenium-tutorial-main")
+        self.driver.get("http://localhost/selenium-tutorial-main.html")
         # Create a screenshots directory if not present
         if (os.path.exists('./tests/screenshots')):
             pass
