@@ -10,7 +10,7 @@ class Qxf2_Tutorial_BrowserStack_Test(unittest.TestCase):
         self.driver = webdriver.Remote(command_executor='http://avinashshetty:ppAo6mDXzyZ18M5e7hbi@hub.browserstack.com:80/wd/hub',desired_capabilities=desired_cap)
         #self.driver = webdriver.Firefox()
         
-    def test_chess(self):
+    def test_qxf2_selenium_tutorial(self):
         "An example test: Visit selenium tutorial link "
         #Go to the URL 
         self.driver.get("http://localhost/selenium-tutorial-main")
