@@ -15,7 +15,8 @@ test:
     - sudo service nginx restart
     - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
     - unzip BrowserStackLocal-linux-x64.zip
-    - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi &
+    - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi
+      background: true
     
   override:
     - python tests/Qxf2_Tutorial_BrowserStack_Test.py
