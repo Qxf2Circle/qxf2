@@ -6,8 +6,13 @@ general:
 dependencies:
   pre:
     - sudo pip install -U selenium
+	- sudo apt-get install nginx
     
 ## Running Tests
 test:
+	pre:
+    - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main /usr/share/nginx/html/selenium-tutorial-main
+    
+
    override:
     - python tests/Navigate_Qxf2_Tutorial_Test.py
