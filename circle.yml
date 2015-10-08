@@ -1,7 +1,4 @@
-general:
-  artifacts:
-    - "./tests/screenshots" #Save the screenshots for all the tests
-    
+
 ## Customize dependencies
 dependencies:
   pre:
@@ -12,9 +9,7 @@ dependencies:
 test:
   pre:
     # Copy the html page to nginx default public www location
-    - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
-    # Restart the nginx service
-    - sudo service nginx restart
+    - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
     # Download the browserstack binary file to create a tunnel
     - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
     # Unzip the browserstack binary file
