@@ -16,11 +16,6 @@ class Qxf2_Tutorial_BrowserStack_Test(unittest.TestCase):
         "An example test: Visit Qxf2 Tutorial Page and assert the title "
         # The driver.get method will navigate to a page given by the URL
         self.driver.get("http://localhost/selenium-tutorial-main.html")
-        # Create a screenshots directory if not present
-        if not (os.path.exists('./tests/screenshots')):
-            os.makedirs('./tests/screenshots')
-        # Save screenshot in the created directory
-        self.driver.save_screenshot('./tests/screenshots/Qxf2_Tutorial_page.png')
         # Assert the Page Title
         self.assertIn ("Qxf2 Services: Selenium training main", self.driver.title)
         # Close the browser window
