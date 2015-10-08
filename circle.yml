@@ -11,10 +11,15 @@ dependencies:
 ## Running Tests
 test:
   pre:
+    # Copy the html page to nginx default public www location
     - sudo cp /home/ubuntu/qxf2/selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
+    # Restart the nginx service
     - sudo service nginx restart
+    # Download the browserstack binary file to create a tunnel
     - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
+    # Unzip the browserstack binary file
     - unzip BrowserStackLocal-linux-x64.zip
+    # Run the file with your access key
     - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi:
         background: true
     
