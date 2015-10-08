@@ -4,12 +4,13 @@ dependencies:
   pre:
     - sudo pip install -U selenium
     - sudo apt-get install nginx
+     # Copy the html page to nginx default public www location
+    - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
     
 ## Running Tests
 test:
   pre:
-    # Copy the html page to nginx default public www location
-    - sudo cp ./selenium-tutorial-main.html /var/www/html/selenium-tutorial-main.html
+   
     # Download the browserstack binary file to create a tunnel
     - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
     # Unzip the browserstack binary file
