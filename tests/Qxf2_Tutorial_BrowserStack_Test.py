@@ -2,7 +2,7 @@
 Selenium Test to login to Qxf2 Tutorial Page and assert the title
 """
 
-import unittest, time, os
+import unittest
 from selenium import webdriver
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
