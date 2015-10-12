@@ -18,10 +18,10 @@ test:
     - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi:
         background: true
   post:
-  - >
-    if [ -n "${NIGHTLY_BUILD}" ]; then
-      ./bin/nightly_build.sh ${FUNCTIONAL_TEST_TARGET};
-    fi
+    - >
+      if [ -n "${NIGHTLY_BUILD}" ]; then
+        ./bin/nightly_build.sh ${FUNCTIONAL_TEST_TARGET};
+      fi
 	  
   override:
     - python tests/Qxf2_Tutorial_BrowserStack_Test.py
