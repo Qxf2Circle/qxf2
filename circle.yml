@@ -17,11 +17,10 @@ test:
     # Run the file with your access key
     - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi:
         background: true
+  override:
+    - python tests/Qxf2_Tutorial_BrowserStack_Test.py 
   post:
     - >
       if [ -n "${NIGHTLY_BUILD}" ]; then
         ./bin/nightly_build.sh ${FUNCTIONAL_TEST_TARGET};
       fi
-	  
-  override:
-    - python tests/Qxf2_Tutorial_BrowserStack_Test.py
