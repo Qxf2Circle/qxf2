@@ -19,6 +19,7 @@ test:
         background: true
   override:
     - python tests/Qxf2_Tutorial_BrowserStack_Test.py 
+    - sleep 10
   post:
     - >
       if [ -n "${NIGHTLY_BUILD}" ]; then
