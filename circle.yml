@@ -9,19 +9,7 @@ dependencies:
     
 ## Running Tests
 test:
-  pre:   
-    # Download the browserstack binary file to create a tunnel
-    - wget "https://www.browserstack.com/browserstack-local/BrowserStackLocal-linux-x64.zip"
-    # Unzip the browserstack binary file
-    - unzip BrowserStackLocal-linux-x64.zip
-    # Run the file with your access key
-    - ./BrowserStackLocal ppAo6mDXzyZ18M5e7hbi:
-        background: true
+  
   override:
-    - python tests/Qxf2_Tutorial_BrowserStack_Test.py 
-    - sleep 10
-  post:
-    - >
-      if [ -n "${NIGHTLY_BUILD}" ]; then
-        ./bin/nightly_build.sh;
-      fi
+    - python tests/Navigate_Qxf2_Tutorial_Test.py 
+    
