@@ -2,7 +2,6 @@
 Selenium Test to login to Qxf2 Tutorial Page and assert the title
 """
 
-import os
 from selenium import webdriver
 
 # Create an instance of Firefox WebDriver
